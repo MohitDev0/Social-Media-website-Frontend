@@ -10,7 +10,7 @@ Social Media website
  username - gaurav@gmail.com , password - gaurav@123
 
 # Technologies Used
-  List the technologies and frameworks used in building your website.
+  
     javascript
     MongoDB
     Express.js
