@@ -15,7 +15,7 @@ const Conversation = ({ conversationUser, currentUser, index, clickedIndex, onCl
             setfriend(res.data);
         }
         getfriend();
-    }, [conversationUser, currentUser])
+    }, [conversationUser, currentUser , baseurl])
     return (
         <div className="conversation" onClick={onClick} style={{ backgroundColor: isMeClicked ? "#e7e5e5f4" : "white" }}>
             <div className="conversationWrapper">

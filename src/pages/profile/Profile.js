@@ -23,7 +23,7 @@ const Profile = () => {
             setUser(res.data);
         }
         fetchUserProfile();
-    }, [username, refresh]);
+    }, [username, refresh , baseurl]);
 
     const uploadfileHandler = async (uploadProfile) => {
         let filename;

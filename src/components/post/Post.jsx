@@ -26,7 +26,7 @@ function Post({ post, refresh }) {
             setUser(res.data);
         }
         fetchUser();
-    }, [post.userId])
+    }, [post.userId , baseurl])
 
     function likeHandler() {
         setLike(isliked ? like - 1 : like + 1);

@@ -20,7 +20,7 @@ const Feed = ({ username }) => {
         }
         fetchPosts();
         setRefresh(false);
-    }, [username, user._id, refresh]);
+    }, [username, user._id, refresh , baseurl]);
 
 
     return (

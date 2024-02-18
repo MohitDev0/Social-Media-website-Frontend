@@ -15,7 +15,7 @@ const Message = ({ own, message }) => {
             setUser(res.data);
         }
         getUser();
-    }, [message])
+    }, [message , baseurl])
     return (
         <div className={own ? "message own" : "message"}>
             <div className="messageTop">

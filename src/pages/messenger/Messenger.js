@@ -38,7 +38,7 @@ const Messenger = () => {
             });
         });
 
-    }, []);
+    }, [serverurl]);
 
     useEffect(() => {
         ArrivalMessage && currentChat?.members.includes(ArrivalMessage.sender) && setMessages((prev) => [...prev, ArrivalMessage])
@@ -63,7 +63,7 @@ const Messenger = () => {
             }
         };
         fetchConversation();
-    }, [user._id, currentChat]);
+    }, [user._id, currentChat , baseurl]);
 
     useEffect(() => {
         const fetchMessage = async () => {
@@ -75,7 +75,7 @@ const Messenger = () => {
             }
         }
         fetchMessage();
-    }, [currentChat]);
+    }, [currentChat , baseurl]);
 
     const HandleNewMessage = async (e) => {
         e.preventDefault();
@@ -111,7 +111,7 @@ const Messenger = () => {
             setFoundFriends(res.data);
         }
         getfriends();
-    }, [user._id]);
+    }, [user._id, baseurl]);
 
 
     const click = (index) => {

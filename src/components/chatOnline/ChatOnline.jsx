@@ -14,7 +14,7 @@ const ChatOnline = ({ onlineFriends, currentUserId, setCurrentchat }) => {
             setFriends(res.data);
         }
         getfriends();
-    }, [currentUserId])
+    }, [currentUserId, baseurl])
 
     useEffect(() => {
         setOnlineFriend(friends.filter(f => onlineFriends.includes(f._id)))

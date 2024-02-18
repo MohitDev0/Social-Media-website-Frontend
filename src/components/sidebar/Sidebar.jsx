@@ -15,7 +15,7 @@ const Sidebar = () => {
       setallUser(res.data);
     }
     getallUser();
-  }, [user._id]);
+  }, [user._id , baseurl]);
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">

@@ -1,8 +1,9 @@
 import React, { useRef } from 'react'
 import "./Register.css";
-import { Link, Navigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import toast from 'react-hot-toast';
 
 
 const Register = () => {
@@ -25,7 +26,7 @@ const Register = () => {
             try {
                 await axios.post(baseurl + "/auth/register", user);
             } catch (error) {
-                console.log(error);
+                toast.error("something wrong !!")
             }
         }
         
